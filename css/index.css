@@ -3,7 +3,7 @@
 
 body {
     font-family: 'Roboto Slab', serif;
-    background-color: white;
+    background-color: #ffff;
     color: #0c0527;
 }
 
@@ -31,7 +31,6 @@ header {
 
 #drawphoto {
     width: 340px;
-    /* height: 100%; */
     border-radius: 50%;
 }
 
