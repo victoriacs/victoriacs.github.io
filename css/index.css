@@ -3,20 +3,21 @@
 
 body {
     font-family: 'Roboto Slab', serif;
-    background-color: rgb(231, 224, 216);
+    background-color: white;
+    color: #0c0527;
+}
+
+h1 {
+    color: #e974bb;
 }
 
 p {
     font-family: 'Roboto Slab', serif;
+    font-size: 20px;
 }
 
 header {
     min-height: 100vh;
-    background-color: aquamarine;
-}
-
-.headerText {
-    height: fit-content;
 }
 
 .socials li {
@@ -24,13 +25,16 @@ header {
 }
 
 .socials li img {
-    width: 40%;
+    width: 50%;
 }
 
-header .headerPhoto img {
-    width: 70%;
+
+#drawphoto {
+    width: 340px;
+    /* height: 100%; */
     border-radius: 50%;
 }
+
 
 .skills li {
     margin: 0.5em;
@@ -47,5 +51,13 @@ header .headerPhoto img {
 
 footer {
     margin-bottom: 0%;
-    background-color: pink;
+    background-color: #f0a2d2;
+}
+
+.socials li i {
+    font-size: 24px;
+}
+
+span {
+    color: #0c0527;
 }
