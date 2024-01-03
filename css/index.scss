@@ -1,0 +1,150 @@
+$text: #212529;
+$background: #ffffff;
+$primary: #e974bb;
+$secondary: #edd1c3;
+$accent: #f0a2d2;
+$font-family_1: "Roboto Slab", serif;
+
+// @import "https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap";
+// @import "https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;700&display=swap";
+@import url("https://fonts.googleapis.com/css?family=Poppins:700|Poppins:400");
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
+body {
+	font-family: "Poppins";
+	font-weight: 400;
+	background-color: $background;
+	color: $text;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: "Poppins";
+	font-weight: 700;
+}
+
+html {
+	font-size: 100%;
+}
+
+h1 {
+	font-size: 4.21rem;
+	color: $primary;
+}
+
+h2 {
+	font-size: 3.158rem; /* 50.56px */
+}
+
+h3 {
+	font-size: 2.369rem; /* 37.92px */
+}
+
+h4 {
+	font-size: 1.777rem; /* 28.48px */
+}
+
+h5 {
+	font-size: 1.333rem; /* 21.28px */
+}
+
+small {
+	font-size: 0.75rem; /* 12px */
+}
+
+.bi-heart {
+	color: $primary;
+	font-size: 1.4rem;
+	margin-left: 0.5em;
+}
+
+.bi-heart-fill {
+	color: $primary;
+	font-size: 1.4rem;
+	margin-left: 0.5em;
+}
+.highlight-title {
+    position: relative;
+    display: inline-block;
+	::after{
+		content: '';
+		position: absolute;
+		bottom: -0.2em;
+		left: 0;
+		height: 40%;
+		width: 100%;
+		background-color: $secondary;
+		z-index: -1;
+	}
+}
+
+header {
+	min-height: 100vh;
+	.headerText {
+		span {
+			color: $text;
+		}
+	}
+}
+#drawphoto {
+	width: 340px;
+	border-radius: 50%;
+}
+#portada img {
+	height: 100%;
+	width: 100%;
+}
+#personalPhoto {
+	height: 300px;
+}
+.project {
+	background: rgba($secondary, 0.2);
+	.badge {
+		background-color: $accent;
+		color: $text;
+		padding: 10px;
+	}
+	a {
+		border: $accent;
+		background-color: $accent;
+	}
+}
+.skills {
+	li {
+		margin: 0.5em;
+		list-style: none;
+		img {
+			width: 60%;
+		}
+		p {
+			margin-top: 1em;
+		}
+	}
+}
+footer {
+	margin-bottom: 0%;
+	background: rgba($primary, 0.2);
+	i {
+		color: $accent;
+	}
+}
+.socials {
+	padding-left: 0px;
+	li {
+		list-style: none;
+		img {
+			width: 50%;
+		}
+		i {
+			font-size: 24px;
+		}
+	}
+}
+.chem {
+	width: 80%;
+	height: 300px;
+}
