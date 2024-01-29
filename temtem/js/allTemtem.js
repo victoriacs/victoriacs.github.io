@@ -69,14 +69,14 @@ $(document).ready(function () {
               $("#temtemTypes").append(
                 "<img class='type' id=" +
                   type +
-                  " src='../images/types/" +
+                  " src='./images/types/" +
                   type +
                   ".png'>"
               );
             });
             // Icono del TemTem
             if (data["icon"]) {
-              $("#icon").attr("src", ".." + data["icon"]);
+              $("#icon").attr("src", "." + data["icon"]);
             } else {
               $("#icon").attr("src", data["portraitWikiUrl"]);
             }
@@ -151,7 +151,7 @@ function weakness(types) {
           $("#debilities").empty();
           for (var tipo in sumaDebilidades) {
             var img =
-              "<div class='col-lg-1 col-2 pt-2 pb-3 pb-lg-0'><img class='type' src='../images/types/" +
+              "<div class='col-lg-1 col-2 pt-2 pb-3 pb-lg-0'><img class='type' src='./images/types/" +
               tipo +
               ".png'><p id='calculo'>";
             if (sumaDebilidades[tipo] === 0.25) {
