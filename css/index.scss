@@ -1,7 +1,8 @@
 $text: #212529;
 $background: #ffffff;
+$background-secondary: #f7f7f7;
 $primary: #e974bb;
-$secondary: #edd1c3;
+$secondary: #f9f1ed;
 $accent: #f0a2d2;
 $font-family_1: "Roboto Slab", serif;
 
@@ -9,7 +10,6 @@ $font-family_1: "Roboto Slab", serif;
 // @import "https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;700&display=swap";
 @import url("https://fonts.googleapis.com/css?family=Poppins:700|Poppins:400");
 @import "../node_modules/bootstrap/scss/bootstrap";
-
 
 body {
 	font-family: "Poppins";
@@ -68,16 +68,16 @@ small {
 	margin-left: 0.5em;
 }
 .highlight-title {
-    position: relative;
-    display: inline-block;
-	::after{
-		content: '';
+	position: relative;
+	display: inline-block;
+	::after {
+		content: "";
 		position: absolute;
 		bottom: -0.2em;
 		left: 0;
 		height: 40%;
 		width: 100%;
-		background-color: $secondary;
+		background-color: rgba($primary, 20%);
 		z-index: -1;
 	}
 }
@@ -101,16 +101,29 @@ header {
 #personalPhoto {
 	height: 300px;
 }
+#about {
+	line-height: 130%;
+}
 .project {
-	background: rgba($secondary, 0.2);
+	background-color: $background-secondary;
+	h3 {
+		margin-bottom: 3%;
+	}
 	.badge {
 		background-color: $accent;
 		color: $text;
 		padding: 10px;
 	}
 	a {
-		border: $accent;
-		background-color: $accent;
+		background-color: $primary;
+		border: $primary;
+		&:hover {
+			background-color: $primary;
+			box-shadow:
+				$primary 0 4px 8px,
+				rgba(45, 35, 66, 0.2) 0 7px 13px -3px;
+			transform: translateY(-2px);
+		}
 	}
 }
 .skills {
@@ -141,6 +154,9 @@ footer {
 		}
 		i {
 			font-size: 24px;
+			&:hover {
+				color: rgba($primary, 80%);
+			}
 		}
 	}
 }

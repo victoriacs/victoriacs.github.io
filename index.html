@@ -4,51 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Victoria</title>
-
-    <!-- <link rel="stylesheet" href="bootstrap/scss/bootstrap.min.css">
-    <script src="bootstrap/js/bootstrap.min.js"></script> -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> -->
-    
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
-    
     <link href="css/index.css" rel="stylesheet">
+    <script src="js/script.js"></script>
 </head>
 <body>
   <div class="container">
+    <!-- HEADER -->
     <header class="row align-items-lg-center">
       <div class="headerPhoto col-12 col-lg-4 d-flex flex-column justify-content-end mb-4">
           <img id="drawphoto" class="mx-auto d-block img-fluid" src="img/drawphoto.jpg" alt="ProfilePhoto">
       </div>
       <div class="headerText col-12 col-lg-8 m-2 m-lg-0">
         <h1>Victoria's <span>Portfolio</span></h1>
-        <p>A Junior Full Stack Web Developer enthusiastic about both design and functionality aspects.</p>
+        <p>A Junior FullStack Web Developer enthusiastic about both design and functionality aspects.</p>
       </div> 
     </header>
     <main>
+      <!-- ABOUT ME-->
       <section id="about">
-        <h2 class="mb-4 highlight-title">About me<i class="bi bi-heart-fill"></i></h2>
+        <h2 class="mb-4 highlight-title">About me<i class="bi bi-heart"></i></h2>
         <div class="row">
           <div class="col">
-            <p>
-             Hi, I'm Victoria, an enthusiastic junior Full Stack web developer from Spain on the lookout for exciting opportunities in the world of web development.
-             <br><br>
-              My portfolio not only showcases my technical skills but also my ability to quickly learn and adapt. My final course project was a significant milestone where I put my knowledge into practice to build something meaningful and functional.
-              <br><br>
-              I'm actively seeking opportunities to broaden my horizons and contribute in challenging work environments. My burning desire to learn and my determination to take on new challenges continuously drive me forward.
-              <br>
-              I'm thrilled at the prospect of growing and bringing my passion for web development to a team committed to innovation and technical excellence.
-            </p>
-          </div>
-          <!-- <div class="col-2">
-            <img id="personalPhoto" class="rounded" src="img/cvprofile.jpg" alt="" srcset="">
-          </div> -->
+            <p>Hi, I'm Victoria, a passionate junior FullStack web developer based in Spain actively seeking job opportunities.</p>
+            <p>My focus lies in creating responsive and user-friendly websites.</p>
+            <p>I am eager to contribute my skills to projects that prioritize accessibility and responsiveness while also exploring exciting opportunities in the field of web development</p>
         </div>
       </section>
       <section id="projects">
-        <h2 class="mt-4 mb-4 highlight-title">Projects<i class="bi bi-heart-fill"></i></h2>
+        <h2 class="mt-4 mb-4 highlight-title">Projects<i class="bi bi-heart"></i></h2>
+        <!-- TEMTEM PROJECT -->
+        <div class="project row mb-4  justify-content-center shadow rounded">
+          <div class="col-12 col-lg-5 d-flex flex-column order-2 order-lg-0 p-4">
+            <h3>TemTem Calculator</h5>
+            <p>
+              Calculator that allows you to choose TemTem and see their weaknesses.            </p>
+            <p>
+              All information displayed is extracted from an API.
+            </p>
+              <div id="tecnologies">
+                <span class="badge rounded-pill me-2 mt-2">HTML</span>
+                <span class="badge rounded-pill me-2 mt-2">CSS</span>
+                <span class="badge rounded-pill me-2 mt-2">JavaScript</span>
+                <span class="badge rounded-pill me-2 mt-2">jQuery</span>
+                <span class="badge rounded-pill me-2 mt-2">BootStrap 5.3</span>
+              </div>
+              <div class="text-start pt-4 mt-auto">
+                <a href="https://victoriacs.github.io/temtem/" target="_blank" type="button" class="btn btn-primary me-1">VIEW LIVE</a>
+                <a href="https://github.com/victoriacs/temtem-calculator" target="_blank" type="button" class="btn btn-primary">GITHUB</a>
+              </div>
+          </div>
+          <div id="portada" class="col-12 col-lg-7 p-2">
+            <img src="img/temtem.png" class="rounded object-fit-cover shadow-sm" alt="">
+          </div>
+        </div>
+        <!-- PORTFOLIO PROJECT -->
         <div class="project row mb-4 justify-content-center shadow rounded">
           <div id="portada" class="col-12 col-lg-7 p-2">
             <img src="img/portfolio.png" class="rounded object-fit-cover shadow-sm" alt="">
@@ -62,21 +73,21 @@
                   <span class="badge rounded-pill me-2 mt-2">BootStrap 5.3</span>
                 </div>
                 <div class="text-start pt-2 mt-auto">
-                  <!-- <a href="https://victoriacs.github.io" type="button" class="btn btn-primary me-1">VIEW</a> -->
                   <a href="https://github.com/victoriacs/victoriacs.github.io" target="_blank" type="button" class="btn btn-primary">GITHUB</a>
                 </div>
             </div>
-          
           </div>
-          
-          <div class="project row justify-content-center shadow rounded">
+          <!-- CHEM PROJECT -->
+          <div class="project row mb-4 justify-content-center shadow rounded">
             <div class="col-12 col-lg-5 d-flex flex-column order-2 order-lg-0 p-4">
               <h3>CHEM</h5>
-              <p>
+              <p class="m-0">
                 My course's final project involves chemistry. 
-                Users create and save custom formulas using chosen elements. <br>
+              </p>
+              <p>Users create and save custom formulas using chosen elements. <br>
+              </p>
+              <p>
                 The website provides detailed info on elements, including symbols, atomic numbers, series, and physical properties.
-                There's also a computer-based periodic table.
               </p>
                 <div id="tecnologies">
                   <span class="badge rounded-pill me-2 mt-2">HTML</span>
@@ -88,7 +99,6 @@
                   <span class="badge rounded-pill me-2 mt-2">jQuery</span>
                 </div>
                 <div class="text-start pt-4 mt-auto">
-                  <a href="#" type="button" class="btn btn-primary me-1">VIEW (in progress)</a>
                   <a href="https://github.com/victoriacs/chem" target="_blank" type="button" class="btn btn-primary">GITHUB</a>
                 </div>
             </div>
@@ -97,9 +107,9 @@
             </div>
           </div>
       </section>
-      
+      <!-- SKILLS -->
       <section id="skills">
-        <h2 class="mt-4 mb-4 highlight-title">Skills<i class="bi bi-heart-fill"></i></h2>
+        <h2 class="mt-4 mb-4 highlight-title">Skills<i class="bi bi-heart"></i></h2>
         <ul class="skills d-flex flex-wrap text-center">
           <li><img src="img/Php.svg" alt="phpLogo"><p>PHP</p></li>
           <li><img src="img/Laravel.svg" alt="laravelLogo"><p>Laravel</p></li>
@@ -114,6 +124,7 @@
     </main>
   </div>
 </div>
+<!-- FOOTER -->
 <footer>
     <div class="p-4 textSocials">
         <h2>Contact Me!</h2>
