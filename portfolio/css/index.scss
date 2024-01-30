@@ -12,6 +12,7 @@ $font-family_1: "Roboto Slab", serif;
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 body {
+	margin: 0;
 	font-family: "Poppins";
 	font-weight: 400;
 	background-color: $background;
