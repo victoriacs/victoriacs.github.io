@@ -12097,14 +12097,13 @@ header .headerText span {
   border-radius: 10px;
 }
 
-.skills li {
-  margin: 0.5em;
-  list-style: none;
+.skills div {
+  margin: 1em;
 }
-.skills li img {
-  width: 60%;
+.skills div img {
+  width: 70px;
 }
-.skills li p {
+.skills div p {
   margin-top: 1em;
 }
 
