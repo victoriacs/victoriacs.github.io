@@ -1,13 +1,329 @@
 <!DOCTYPE html>
-<html>
+<html lang="eng">
   <head>
-    <title>Portfolio</title>
-    <meta
-      http-equiv="refresh"
-      content="1; url = https://victoriacs.github.io/portfolio"
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Victoria Portfolio</title>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
     />
+    <link href="portfolio/css/index.css" rel="stylesheet" />
+    <link rel="icon" type="image/jpg" href="portfolio/img/favicon.png" />
+    <script src="portfolio/js/script.js"></script>
   </head>
   <body>
-    Redirecting to Victoria's portfolio
+    <div class="container ps-4 pe-4">
+      <!-- HEADER -->
+      <header class="row align-items-lg-center">
+        <div
+          class="headerPhoto col-12 col-lg-4 d-flex flex-column justify-content-end mb-4"
+        >
+          <img
+            id="drawphoto"
+            class="mx-auto d-block img-fluid img-responsive"
+            src="portfolio/img/profile.png"
+            alt="ProfilePhoto"
+          />
+        </div>
+        <div class="headerText col-12 col-lg-8">
+          <h1>Victoria's <span>Portfolio</span></h1>
+          <p>
+            A Junior FullStack Web Developer enthusiastic about both design and
+            functionality aspects.
+          </p>
+          <div id="socials">
+            <a
+              class="btn btn-secondary"
+              href="https://drive.google.com/file/d/1aIDWaU4Q1ICb6Ic2V6_1_i1Z34APZq-a/view?usp=sharing"
+              target="_blank"
+              ><i class="bi bi-file-earmark-arrow-down"></i> Curriculum</a
+            >
+            <a
+              class="btn btn-secondary"
+              href="https://www.linkedin.com/in/vcstankiewicz/"
+              target="_blank"
+              ><i class="bi bi-linkedin"></i> Linkedin</a
+            >
+            <a
+              class="btn btn-secondary"
+              href="https://github.com/victoriacs"
+              target="_blank"
+              ><i class="bi bi-github"></i> GitHub</a
+            >
+          </div>
+        </div>
+      </header>
+      <main>
+        <!-- WORK EXPERIENCE -->
+        <section id="work">
+          <h2 class="mb-4 highlight-title">
+            Work experience<i class="bi bi-heart"></i>
+          </h2>
+          <!-- Section: Timeline -->
+          <section class="py-4">
+            <ul class="timeline">
+              <li class="timeline-item mb-3">
+                <p class="text-muted mb-2 fw-bold">March 2022 - June 2022</p>
+
+                <h5 class="fw-bold">FullStack Web Developer - Intership</h5>
+                <p class="text-muted mb-2">
+                  <a
+                    class="text-decoration-none"
+                    href="https://nuvify.com"
+                    target="_blank"
+                    >Nuvify</a
+                  >, Blanes
+                </p>
+                <ul>
+                  <li>
+                    Collaboration in the development of a new export statistics
+                    portal, following the leadership team's instructions
+                  </li>
+                  <li>
+                    FrontEnd development using HTML5, CSS, BootStrap, and
+                    JavaScript to create an attractive and functional user
+                    interface
+                  </li>
+                  <li>
+                    BackEnd development with PHP and Laravel, integrating
+                    automated email systems to send notifications to users
+                  </li>
+                  <li>
+                    Implementation of functionality allowing users to download a
+                    PDF with all the obtained information.
+                  </li>
+                </ul>
+              </li>
+
+              <li class="timeline-item mb-3">
+                <p class="text-muted mb-2 fw-bold">October 2019 - May 2020</p>
+
+                <h5 class="fw-bold">IT - Intership</h5>
+                <p class="text-muted mb-2">
+                  <a
+                    class="text-decoration-none"
+                    href="https://agora.xtec.cat/iemontagut/"
+                    target="_blank"
+                    >IE Montagut</a
+                  >, Santa Susanna
+                </p>
+                <ul>
+                  <li>Hardware maintenance and repair</li>
+                  <li>Software installation and updates</li>
+                  <li>Weekly inventory management</li>
+                  <li>Troubleshooting and issue resolution</li>
+                  <li>
+                    Creation of an automated Excel spreadsheet to generate
+                    emails for enrolled students
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+          <!-- Section: Timeline -->
+        </section>
+        <!-- PROJECTS -->
+        <section id="projects">
+          <h2 class="my-4 highlight-title">
+            Projects<i class="bi bi-heart"></i>
+          </h2>
+          <!-- TEMTEM PROJECT -->
+          <div class="project row py-4 justify-content-center">
+            <div
+              class="col-12 col-lg-5 d-flex flex-column pb-2 order-2 order-lg-0 mt-1"
+            >
+              <h3>TemTem Calculator</h3>
+              <p>
+                Calculator that allows you to choose TemTem and see their
+                weaknesses.
+              </p>
+              <p>All information displayed is extracted from an API.</p>
+              <div id="tecnologies">
+                <span class="badge rounded-pill me-2 mt-2">HTML</span>
+                <span class="badge rounded-pill me-2 mt-2">CSS</span>
+                <span class="badge rounded-pill me-2 mt-2">JavaScript</span>
+                <span class="badge rounded-pill me-2 mt-2">jQuery</span>
+                <span class="badge rounded-pill me-2 mt-2">BootStrap 5.3</span>
+              </div>
+              <div class="text-start pt-4 mt-auto">
+                <a
+                  href="https://victoriacs.github.io/temtem/"
+                  target="_blank"
+                  type="button"
+                  class="btn btn-secondary me-1"
+                  ><i class="bi bi-box-arrow-up-right"></i> VIEW LIVE</a
+                >
+                <a
+                  href="https://github.com/victoriacs/temtem-calculator"
+                  target="_blank"
+                  type="button"
+                  class="btn btn-secondary"
+                  ><i class="bi bi-github"></i> GITHUB</a
+                >
+              </div>
+            </div>
+            <div
+              id="portada"
+              class="col-12 col-lg-7 p-2 justify-content-center d-flex justify-content-center"
+            >
+              <img src="portfolio/img/temtem.png" />
+            </div>
+          </div>
+          <!-- PORTFOLIO PROJECT -->
+          <div class="project row py-4 justify-content-center">
+            <div id="portada" class="col-12 col-lg-7 p-2">
+              <img src="portfolio/img/portfolio.png" />
+            </div>
+            <div class="col-12 col-lg-5 d-flex flex-column pb-2 mt-1">
+              <h3>Personal Portfolio</h3>
+              <p>
+                My personal portfolio showcases my journey as a junior web
+                developer, highlighting my projects, skills, and passion for
+                creating responsive and dynamic web.
+              </p>
+              <div id="tecnologies">
+                <span class="badge rounded-pill me-2 mt-2">HTML</span>
+                <span class="badge rounded-pill me-2 mt-2">CSS</span>
+                <span class="badge rounded-pill me-2 mt-2">BootStrap 5.3</span>
+              </div>
+              <div class="text-start pt-4 mt-auto">
+                <a
+                  href="https://github.com/victoriacs/victoriacs.github.io"
+                  target="_blank"
+                  type="button"
+                  class="btn btn-secondary"
+                  ><i class="bi bi-github"></i> GITHUB</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- CHEM PROJECT -->
+          <div class="project row py-4 justify-content-center">
+            <div
+              class="col-12 col-lg-5 d-flex flex-column order-2 order-lg-0 pb-2 mt-1"
+            >
+              <h3>CHEM</h3>
+              <p class="m-0">My course's final project involves chemistry.</p>
+              <p>
+                Users create and save custom formulas using chosen elements.
+              </p>
+              <p>
+                The website provides detailed info on elements, including
+                symbols, atomic numbers, series, and physical properties.
+              </p>
+              <div id="tecnologies">
+                <span class="badge rounded-pill me-2 mt-2">HTML</span>
+                <span class="badge rounded-pill me-2 mt-2">CSS</span>
+                <span class="badge rounded-pill me-2 mt-2">BootStrap 5.1</span>
+                <span class="badge rounded-pill me-2 mt-2">Laravel 8</span>
+                <span class="badge rounded-pill me-2 mt-2">MySQL 5.7</span>
+                <span class="badge rounded-pill me-2 mt-2">JavaScript</span>
+                <span class="badge rounded-pill me-2 mt-2">jQuery</span>
+              </div>
+              <div class="text-start pt-4 mt-auto">
+                <a
+                  href="https://github.com/victoriacs/chem"
+                  target="_blank"
+                  type="button"
+                  class="btn btn-secondary"
+                  ><i class="bi bi-github"></i> GITHUB</a
+                >
+              </div>
+            </div>
+            <div id="portada" class="col-12 col-lg-7 p-2">
+              <img src="portfolio/img/chem.png" />
+            </div>
+          </div>
+        </section>
+        <!-- ABOUT ME-->
+        <section id="about">
+          <h2 class="my-4 highlight-title">
+            About me<i class="bi bi-heart"></i>
+          </h2>
+          <div class="row py-4">
+            <div class="col">
+              <p>
+                Hi, I'm Victoria, a passionate junior FullStack web developer
+                based in Spain actively seeking job opportunities.
+              </p>
+              <p>
+                My focus lies in creating responsive and user-friendly websites.
+              </p>
+              <p>
+                I am eager to contribute my skills to projects that prioritize
+                accessibility and responsiveness while also exploring exciting
+                opportunities in the field of web development
+              </p>
+            </div>
+          </div>
+        </section>
+        <!-- SKILLS -->
+        <section id="skills">
+          <h2 class="my-4 highlight-title">
+            Skills<i class="bi bi-heart"></i>
+          </h2>
+          <ul class="skills d-flex flex-wrap text-center py-4">
+            <li>
+              <img src="portfolio/img/Php.svg" alt="phpLogo" />
+              <p>PHP</p>
+            </li>
+            <li>
+              <img src="portfolio/img/Laravel.svg" alt="laravelLogo" />
+              <p>Laravel</p>
+            </li>
+            <li>
+              <img src="portfolio/img/Mysql.svg" alt="mysqlLogo" />
+              <p>MySQL</p>
+            </li>
+            <li>
+              <img src="portfolio/img/Html.svg" alt="htmlLogo" />
+              <p>HTML</p>
+            </li>
+            <li>
+              <img src="portfolio/img/Css3.svg" alt="cssLogo" />
+              <p>CSS</p>
+            </li>
+            <li>
+              <img src="portfolio/img/Javascript.svg" alt="jsLogo" />
+              <p>JavaScript</p>
+            </li>
+            <li>
+              <img src="portfolio/img/Jquery.svg" alt="jqueryLogo" />
+              <p>jQuery</p>
+            </li>
+            <li>
+              <img src="portfolio/img/BootstrapFill.svg" alt="boostrapLogo" />
+              <p>BootStrap</p>
+            </li>
+          </ul>
+        </section>
+      </main>
+    </div>
+    <!-- FOOTER -->
+    <footer>
+      <div class="p-4 textSocials">
+        <h2>Contact Me!</h2>
+        <p>
+          If you're looking to collaborate on an exciting project or explore how
+          my skills can benefit your team, I would love to connect with you!
+        </p>
+        <ul class="socials d-flex align-items-center">
+          <li><i class="bi bi-envelope-fill"></i></li>
+          <li class="ms-2">vc.stankiewicz@gmail.com</li>
+          <li class="ms-3">
+            <a href="https://www.linkedin.com/in/vcstankiewicz/" target="_blank"
+              ><i class="bi bi-linkedin"></i
+            ></a>
+          </li>
+          <li class="ms-3">
+            <a href="https://github.com/victoriacs" target="_blank"
+              ><i class="bi bi-github"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
