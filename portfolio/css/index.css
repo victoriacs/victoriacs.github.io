@@ -12030,13 +12030,13 @@ small, .small {
 .bi-heart {
   color: #e58aa2;
   font-size: 1.4rem;
-  margin-left: 0.5em;
+  margin-left: 0.1em;
 }
 
 .bi-heart-fill {
   color: #e58aa2;
   font-size: 1.4rem;
-  margin-left: 0.5em;
+  margin-left: 0.1em;
 }
 
 .highlight-title {
@@ -12059,6 +12059,7 @@ header {
   min-height: 100vh;
 }
 header .headerText span {
+  font-size: 3rem;
   color: #454d61;
 }
 

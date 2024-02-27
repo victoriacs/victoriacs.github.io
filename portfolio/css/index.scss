@@ -60,13 +60,13 @@ small {
 .bi-heart {
 	color: $primary;
 	font-size: 1.4rem;
-	margin-left: 0.5em;
+	margin-left: 0.1em;
 }
 
 .bi-heart-fill {
 	color: $primary;
 	font-size: 1.4rem;
-	margin-left: 0.5em;
+	margin-left: 0.1em;
 }
 .highlight-title {
 	color: $secondary;
@@ -88,6 +88,7 @@ header {
 	min-height: 100vh;
 	.headerText {
 		span {
+			font-size: 3rem;
 			color: $secondary;
 		}
 	}
